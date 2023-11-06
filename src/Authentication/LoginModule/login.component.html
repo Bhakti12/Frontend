@@ -8,7 +8,7 @@
                 <table class="login-full-width" cellspacing="0">
                     <tr>
                         <td>
-                            <mat-form-field>
+                            <mat-form-field class="example-full-width">
                                 <mat-label>Enter your email</mat-label>
                                     <input matInput placeholder="pat@example.com" [formControl]="email" required>
                                 <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
@@ -17,7 +17,7 @@
                     </tr>
                     <tr>
                         <td>
-                            <mat-form-field>
+                            <mat-form-field class="example-full-width">
                                 <mat-label>Enter your password</mat-label>
                                     <input matInput [type]="hide ? 'password' : 'text'" [formControl]="password" required>
                                     <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
@@ -30,7 +30,7 @@
                     <tr>
                         <td>
                             <div class="login100-form-btn">
-                                <button mat-raised-button color="primary">Login</button>
+                                <button mat-raised-button color="warn">Login</button>
                             </div>
                         </td>
                     </tr>

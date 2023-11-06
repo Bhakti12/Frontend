@@ -9,11 +9,15 @@ import { LoginComponent } from 'src/Authentication/LoginModule/login.component';
 import {FormsModule,ReactiveFormsModule} from "@angular/forms";
 import { RouterModule } from '@angular/router';
 import { routes } from "../app/app-routing.module";
+import { RegisterComponent } from 'src/Authentication/RegistrationModule/registration.component';
+import { AuthenticationComponent } from 'src/Authentication/authentication.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent
+    AuthenticationComponent,
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
