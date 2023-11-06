@@ -9,11 +9,11 @@ export class AuthService{
 
     }
 
-    Register(){
+    Register(firstName:string,lastName:String,address:string,MobileNo:string,profilePic:string,idProof:string,email:string,password:string){
         
     }
 
-    Login(){
+    Login(email:string,password:string){
 
     }
 }
