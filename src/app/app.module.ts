@@ -11,6 +11,7 @@ import { RouterModule } from '@angular/router';
 import { routes } from "../app/app-routing.module";
 import { RegisterComponent } from 'src/Authentication/RegistrationModule/registration.component';
 import { AuthenticationComponent } from 'src/Authentication/authentication.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { AuthenticationComponent } from 'src/Authentication/authentication.compo
     AppRoutingModule,
     BrowserAnimationsModule,
     ReactiveFormsModule,
+    HttpClientModule,
     FormsModule,
     CustomMaterialModule,
     RouterModule.forRoot(routes),
