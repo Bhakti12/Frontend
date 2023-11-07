@@ -11,13 +11,15 @@ import {
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css'],
 })
+
 export class LoginComponent implements OnInit {
+  
   ngOnInit(): void {
     throw new Error('Method not implemented.');
   }
 
   email = new FormControl('', [Validators.required, Validators.email]);
-  password = new FormControl('', [Validators.required]);
+  password = new FormControl('', [Validators.required,Validators.pattern('')]);
   hide = true;
 
   getErrorMessage() {
