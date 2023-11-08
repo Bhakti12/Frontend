@@ -9,6 +9,8 @@ import { MatToolbarModule } from "@angular/material/toolbar";
 import { MatCardModule } from "@angular/material/card";
 import { MatFormFieldModule } from "@angular/material/form-field";
 import { MatIconModule } from "@angular/material/icon";
+import { MatProgressBarModule } from "@angular/material/progress-bar";
+import { MatDividerModule } from "@angular/material/divider";
 
 @NgModule({
   imports: [
@@ -21,7 +23,9 @@ import { MatIconModule } from "@angular/material/icon";
     MatToolbarModule,
     MatCardModule,
     MatFormFieldModule,
-    MatIconModule
+    MatIconModule,
+    MatProgressBarModule,
+    MatDividerModule
   ],
   exports: [
     CommonModule,
@@ -33,7 +37,9 @@ import { MatIconModule } from "@angular/material/icon";
     MatToolbarModule,
     MatCardModule,
     MatFormFieldModule,
-    MatIconModule
+    MatIconModule,
+    MatProgressBarModule,
+    MatDividerModule
   ],
 })
 
