@@ -1,0 +1,95 @@
+<div class="main-div">  
+    <mat-card class="login card">
+        <mat-card-header>
+            <mat-card-title>Register</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            <form class="login-form">
+                <table class="login-full-width" cellspacing="0">
+                    <tr>
+                        <td>
+                            <mat-form-field class="example-full-width">
+                                <mat-label>First Name</mat-label>
+                                    <input matInput placeholder="pat" [formControl]="firstname" required>
+                                <mat-error *ngIf="firstname.invalid">{{getErrorMessage()}}</mat-error>
+                            </mat-form-field>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <mat-form-field class="example-full-width">
+                                <mat-label>Last Name</mat-label>
+                                    <input matInput placeholder="Hamsworth" [formControl]="lastname" required>
+                                <mat-error *ngIf="lastname.invalid">{{getErrorMessage()}}</mat-error>
+                            </mat-form-field>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <mat-form-field class="example-full-width">
+                                <mat-label>Profile Pic</mat-label>
+                                    <input matInput [formControl]="profilePic" required>
+                                <mat-error *ngIf="profilePic.invalid">{{getErrorMessage()}}</mat-error>
+                            </mat-form-field>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <mat-form-field class="example-full-width">
+                                <mat-label>ID Proof</mat-label>
+                                    <input matInput [formControl]="idProof" required>
+                                <mat-error *ngIf="idProof.invalid">{{getErrorMessage()}}</mat-error>
+                            </mat-form-field>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <mat-form-field class="example-full-width">
+                                <mat-label>Address</mat-label>
+                                    <input matInput [formControl]="address" required>
+                                <mat-error *ngIf="address.invalid">{{getErrorMessage()}}</mat-error>
+                            </mat-form-field>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <mat-form-field class="example-full-width">
+                                <mat-label>MobileNo</mat-label>
+                                    <input matInput [formControl]="mobileNo" required>
+                                <mat-error *ngIf="mobileNo.invalid">{{getErrorMessage()}}</mat-error>
+                            </mat-form-field>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <mat-form-field class="example-full-width">
+                                <mat-label>Enter your email</mat-label>
+                                    <input matInput placeholder="pat@example.com" [formControl]="email" required>
+                                <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+                            </mat-form-field>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <mat-form-field class="example-full-width">
+                                <mat-label>Enter your password</mat-label>
+                                    <input matInput [type]="hide ? 'password' : 'text'" [formControl]="password" required>
+                                    <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                                    <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                                    <mat-error *ngIf="password.invalid">{{getErrorMessage()}}</mat-error>
+                                    </button>
+                            </mat-form-field>    
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="login100-form-btn">
+                                <button mat-raised-button color="warn">Register</button>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </mat-card-content>
+    </mat-card>
+</div>
