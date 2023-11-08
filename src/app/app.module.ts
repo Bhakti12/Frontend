@@ -9,7 +9,7 @@ import { LoginComponent } from './LoginModule/login.component';
 import {FormsModule,ReactiveFormsModule} from "@angular/forms";
 import { RouterModule } from '@angular/router';
 import { routes } from "../app/app-routing.module";
-import { RegisterComponent } from 'src/app/RegistrationModule/registration.component';
+import { RegisterComponent } from './RegistrationModule/registration.component';
 import { HttpClientModule } from '@angular/common/http';
 import { HeaderFooterComponent } from './shared/Header-Footer/header-footer.component';
 import { About } from './shared/about/about.component';

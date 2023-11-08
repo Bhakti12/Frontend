@@ -8,7 +8,6 @@ import { About } from './shared/about/about.component';
 export const routes: Routes = [
   {path : 'login', component : LoginComponent},
   {path : 'register', component : RegisterComponent},
-  {path : '',component : LoginComponent},
   {path : 'home',component : HeaderFooterComponent},
   {path : 'about',component : About}
 ];

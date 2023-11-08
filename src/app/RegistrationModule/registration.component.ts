@@ -6,6 +6,7 @@ import { FormControl, Validators } from '@angular/forms';
   templateUrl: './registration.component.html',
   styleUrls: ['./registration.component.css'],
 })
+
 export class RegisterComponent implements OnInit {
   ngOnInit(): void {
     throw new Error('Method not implemented.');
