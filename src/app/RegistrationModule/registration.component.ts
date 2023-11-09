@@ -14,7 +14,7 @@ export class RegisterComponent implements OnInit {
   }
 
   email = new FormControl('', [Validators.required, Validators.email]);
-  password = new FormControl('', [Validators.required, Validators.pattern('^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[*.!@$%^&(){}[]:;<>,.?/~_+-=|\]).{8,32}$')]);
+  password = new FormControl('', [Validators.required]);
   hide = true;
   firstname = new FormControl('', [Validators.required]);
   lastname = new FormControl('', [Validators.required]);

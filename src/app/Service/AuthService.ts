@@ -16,6 +16,13 @@ export class AuthService {
 
   constructor(private http: HttpClient) {}
 
+  isLoggedIn(){
+    const token:any = localStorage.getItem('token');
+    const payload = atob(token?.split('.')[1]);
+    const parsedPayload = JSON.parse(payload);
+    return parsedPayload;
+  }
+
   Register(
     firstName: string,
     lastName: String,
