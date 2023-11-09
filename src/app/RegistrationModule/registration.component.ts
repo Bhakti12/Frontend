@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, Validators } from '@angular/forms';
+import { AuthService } from '../Service/AuthService';
 
 @Component({
   selector: 'app-registration',
@@ -39,4 +40,9 @@ export class RegisterComponent implements OnInit {
 
     return this.email.hasError('email') ? 'Not a valid email' : '';
   }
+
+  onClickRegister(){
+    
+  }
+
 }
