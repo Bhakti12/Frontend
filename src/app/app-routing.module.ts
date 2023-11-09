@@ -5,14 +5,12 @@ import { RegisterComponent } from 'src/app/RegistrationModule/registration.compo
 import { HeaderFooterComponent } from './Layout/Header-Footer/header-footer.component';
 import { About } from './Layout/about/about.component';
 import { PageNotFoundComponent } from './PageNotFound/pageNotFound.component';
-import { AuthGuard } from './auth-guard.guard';
-import { AuthService } from './Service/AuthService';
-
+import { authGuardGuard } from './auth-guard.guard';
 
 export const routes: Routes = [
   {path : 'login', component : LoginComponent},
   {path : 'register', component : RegisterComponent},
-  {path : 'home',component : HeaderFooterComponent},
+  {path : 'home',component : HeaderFooterComponent, canActivate:[authGuardGuard]},
   {path : 'about',component : About},
   {path : '**',component : PageNotFoundComponent }
 ];
