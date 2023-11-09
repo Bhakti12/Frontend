@@ -84,8 +84,13 @@
                     <tr>
                         <td>
                             <div class="login100-form-btn">
-                                <button mat-raised-button color="warn">Register</button>
+                                <button mat-raised-button color="warn" onclick="onClickRegister()">Register</button>
                             </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a routerLink="/login" routerLinkActive="active">Already Register?</a>
                         </td>
                     </tr>
                 </table>
@@ -93,3 +98,4 @@
         </mat-card-content>
     </mat-card>
 </div>
+<router-outlet></router-outlet>

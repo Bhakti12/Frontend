@@ -28,6 +28,7 @@ export class AuthService {
   ) {
     try {
         const registerPort = this.usePort + `/register`;
+        console.log("register port",registerPort);
       this.http
         .post(
           registerPort,
